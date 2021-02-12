@@ -14,7 +14,7 @@ const CityInput  = ({city,setCity,fetchCityWeather}) => {
         } else {
             setError("");
             // make api call here
-            fetchCityWeather();
+            fetchCityWeather(city);
         }
     };
 
