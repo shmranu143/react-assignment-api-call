@@ -1,0 +1,10 @@
+form{
+    display: flex;
+    margin: 10px;
+}
+form :nth-child(1){
+    width: 100%;
+}
+button{
+    height: 35px;
+}

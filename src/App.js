@@ -14,7 +14,7 @@ function App() {
       )
     .then((res)=>res.json())
     .then((result)=>{
-      // console.log("result is :",result);
+      console.log("result is :",result);
       return setCityWeather(result);
     });
   };
@@ -27,7 +27,7 @@ function App() {
       setCity={setCity}
       fetchCityWeather={fetchCityWeather} 
       />
-
+      
       <CityWeather cityWeather={cityWeather}/>
     </>
   );

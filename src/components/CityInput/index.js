@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
+import './style.css';
 
 const CityInput  = ({city,setCity,fetchCityWeather}) => {
     const [error,setError]=React.useState("")
@@ -22,14 +23,14 @@ const CityInput  = ({city,setCity,fetchCityWeather}) => {
         <Container>
         <Form>
         <Form.Group controlId="formBasicEmail">
-            <Form.Label>City</Form.Label>
+            {/* <Form.Label>City</Form.Label> */}
             <Form.Control 
             value={city}
             type="text" 
             placeholder="Enter City" 
             onChange={handleChange}
             />
-        <p className="text-danger">{error}</p>
+        {/* <p className="text-danger">{error}</p> */}
         </Form.Group>
         <Button variant="primary" onClick={handleSubmit}>
          Submit
